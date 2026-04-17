@@ -1,6 +1,6 @@
 'use client'
 
-import { Sparkles, ArrowRight, Shield } from 'lucide-react'
+import { Sparkles, ArrowRight, Shield, Bot, Zap } from 'lucide-react'
 import { CMOHero } from '@/components/cmo/CMOHero'
 import { SuccessJourney } from '@/components/cmo/SuccessJourney'
 import { MarketDashboard } from '@/components/cmo/MarketDashboard'
@@ -17,18 +17,18 @@ export default function HomePage() {
             </div>
             <div>
               <span className="text-xl font-bold">Rolevio</span>
-              <div className="text-xs text-slate-500">Role + Evolution</div>
+              <div className="text-xs text-slate-500">AI Growth Automation</div>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#dashboard" className="text-sm text-slate-400 hover:text-white transition">
-              成果展示
+            <a href="#automation" className="text-sm text-slate-400 hover:text-white transition">
+              AI 自动化
             </a>
             <a href="#journey" className="text-sm text-slate-400 hover:text-white transition">
               成功案例
             </a>
             <button className="flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
-              预约演示
+              开始免费试用
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -39,7 +39,7 @@ export default function HomePage() {
       <CMOHero />
 
       {/* Market Dashboard */}
-      <div id="dashboard">
+      <div id="automation">
         <MarketDashboard />
       </div>
 
@@ -48,64 +48,112 @@ export default function HomePage() {
         <SuccessJourney />
       </div>
 
-      {/* How It Works - 轻量化技术说明 */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-950/50">
+      {/* How It Works - AI Automation */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              技术黑盒：AI Agent 自动运作
+              AI 自动化引擎：从决策到执行
             </h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              你只需要关注战略决策，剩下的全部自动化执行
+              无需配置复杂的工具，AI 自动运作整个市场增长循环
             </p>
           </div>
 
-          <div className="glass-card max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  品牌 DNA 守护
-                </h3>
-                <p className="text-sm text-slate-400">
-                  AI 学习你的品牌基因，确保所有市场输出保持一致性
-                </p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mx-auto mb-4">
+                <Bot className="w-8 h-8 text-white" />
               </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center mx-auto mb-4">
-                  <Sparkles className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  多角色协同
-                </h3>
-                <p className="text-sm text-slate-400">
-                  策略、内容、设计、投放、分析等角色 AI Agent 自动协作
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-4">
-                  <ArrowRight className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  持续学习优化
-                </h3>
-                <p className="text-sm text-slate-400">
-                  从市场反馈中学习，不断优化执行策略和内容质量
-                </p>
-              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                AI 自动识别机会
+              </h3>
+              <p className="text-sm text-slate-400">
+                分析市场数据、竞品动态、用户反馈，自动发现增长机会
+              </p>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-white/10 text-center">
-              <p className="text-sm text-slate-500">
-                想了解技术细节？
-                <button className="text-primary-400 hover:text-primary-300 ml-2 transition">
-                  查看 Agent 架构 →
-                </button>
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                AI 自动执行优化
+              </h3>
+              <p className="text-sm text-slate-400">
+                生成内容、投放广告、A/B 测试、实时优化，全程自动化
               </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                品牌 DNA 守护
+              </h3>
+              <p className="text-sm text-slate-400">
+                AI 学习品牌基因，确保所有输出保持风格和价值观一致
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 glass-card max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  为什么选择 AI 自动化？
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    '0 配置：AI 自动运作，无需复杂设置',
+                    '24/7：持续监控优化，永不休息',
+                    '10x 速度：从决策到执行只需几小时',
+                    '指数增长：每周自动迭代优化',
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-slate-300">
+                      <span className="w-6 h-6 rounded-lg bg-primary-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary-400 text-sm font-bold">{index + 1}</span>
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-slate-900/50 rounded-xl p-6">
+                <div className="text-xs text-slate-500 font-mono mb-3">AI 自动化示例</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <div className="w-1 h-1 rounded-full bg-green-400 mt-2 flex-shrink-0" />
+                    <div>
+                      <div className="text-slate-400 mb-1">Week 1 Mon 09:00</div>
+                      <div className="text-white">AI 识别 Reddit 新兴社区</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-1 h-1 rounded-full bg-blue-400 mt-2 flex-shrink-0" />
+                    <div>
+                      <div className="text-slate-400 mb-1">Week 1 Mon 14:30</div>
+                      <div className="text-white">AI 生成 20 个内容变体</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-1 h-1 rounded-full bg-violet-400 mt-2 flex-shrink-0" />
+                    <div>
+                      <div className="text-slate-400 mb-1">Week 1 Tue 10:00</div>
+                      <div className="text-white">AI 启动 A/B 测试</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-1 h-1 rounded-full bg-orange-400 mt-2 flex-shrink-0" />
+                    <div>
+                      <div className="text-slate-400 mb-1">Week 1 Fri 16:00</div>
+                      <div className="text-white">AI 优化：CTR ↑ 3.2x</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -116,22 +164,22 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="glass-card">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              准备好让你的团队 <span className="text-gradient">10x 进化</span>了吗？
+              准备好让 AI <span className="text-gradient">自动驱动</span>你的市场增长了吗？
             </h2>
             <p className="text-lg text-slate-400 mb-8">
-              和我们的团队聊聊，看看 Rolevio 如何帮助你在 6 个月内建立 IPO 级市场能力
+              和我们聊聊，看看 Rolevio 如何帮助你在 6 个月内建立市场领导力
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="group flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition">
-                预约 1 对 1 演示
+                开始 15 天免费试用
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
               </button>
               <button className="flex items-center gap-2 glass hover:bg-white/10 text-white px-8 py-4 rounded-xl text-lg transition">
-                下载成功案例集
+                预约产品演示
               </button>
             </div>
             <p className="text-xs text-slate-500 mt-6">
-              已服务 12+ 创业公司 · 平均 6 个月完成市场建立 · 支持私有化部署
+              已服务 12+ 创业公司 · 平均 6 个月完成市场建立 · 无需信用卡
             </p>
           </div>
         </div>
@@ -149,25 +197,25 @@ export default function HomePage() {
                 <span className="font-bold">Rolevio</span>
               </div>
               <p className="text-sm text-slate-500">
-                让营销角色进化
+                AI 驱动的市场增长自动化
                 <br />
-                Role + Evolution
+                From Idea to Market Leadership
               </p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-white mb-3">产品</h4>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-white transition">功能特性</a></li>
+                <li><a href="#" className="hover:text-white transition">AI 自动化</a></li>
                 <li><a href="#" className="hover:text-white transition">定价方案</a></li>
                 <li><a href="#" className="hover:text-white transition">客户案例</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white mb-3">公司</h4>
+              <h4 className="text-sm font-semibold text-white mb-3">资源</h4>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-white transition">关于我们</a></li>
-                <li><a href="#" className="hover:text-white transition">团队介绍</a></li>
-                <li><a href="#" className="hover:text-white transition">加入我们</a></li>
+                <li><a href="#" className="hover:text-white transition">使用文档</a></li>
+                <li><a href="/demo" className="hover:text-white transition">技术演示</a></li>
+                <li><a href="#" className="hover:text-white transition">博客</a></li>
               </ul>
             </div>
             <div>
@@ -180,7 +228,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-            © 2026 Rolevio. All rights reserved.
+            © 2026 Rolevio. AI Growth Automation Platform.
           </div>
         </div>
       </footer>
