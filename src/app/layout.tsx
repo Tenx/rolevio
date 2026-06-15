@@ -1,16 +1,12 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
+const inter = Inter({ subsets: ['latin'] })
+
 export const metadata: Metadata = {
-  title: 'Rolevio - AI Brand Agent Platform',
-  description: 'Role + Evolution | 让每个品牌都拥有自己的AI营销团队',
-  keywords: ['AI', 'Marketing', 'Brand Agent', 'Content Generation', 'Automation'],
-  authors: [{ name: 'Rolevio' }],
-  openGraph: {
-    title: 'Rolevio - AI Brand Agent Platform',
-    description: '让每个品牌都拥有自己的AI营销团队',
-    type: 'website',
-  },
+  title: 'Rolevio - AI Operating Organization Designer',
+  description: 'Design the Future. Build Stronger Firms.',
 }
 
 export default function RootLayout({
@@ -19,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-CN">
-      <body className="font-sans">{children}</body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
