@@ -122,7 +122,6 @@ Basically: **"McKinsey for AI agent organizations."**
 ### Hidden Advantage:
 You already have:
 - ✅ Enterprise workflow understanding
-- ✅ SAP process knowledge
 - ✅ AI orchestration exposure
 - ✅ Real-world operational thinking
 
@@ -156,11 +155,11 @@ Transform them into: **AI-native delegation architectures.**
 
 ## 📄 License
 
-Proprietary - All rights reserved
+MIT License — see [LICENSE](LICENSE) for details.
 
 ## 🤝 Contributing
 
-This is a private project. For inquiries, please contact the maintainers.
+This is a personal portfolio project. Issues and PRs are welcome, but I may not actively maintain it.
 
 ---
 
